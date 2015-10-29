@@ -1,3 +1,18 @@
 #################################################
 # MARKETMOVERS
 #################################################
+
+# [REQUIRED] Collection name
+mongo-db-name=
+
+# [REQUIRED] Host name
+mongo-host-name=
+
+# [REQUIRED] Port number
+mongo-port-number=
+
+# [OPTIONAL] Model base package
+mongo-model-base-package=
+
+# [OPTIONAL] Write concern (Default: SAFE)
+#mongo-write-concern=
