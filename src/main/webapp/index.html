@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-  </head>
-  <body>
-    <h1>hello world</h1>
-  </body>
+<html ng-app="marketmovers" lang="en">
+<head>
+  <!-- meta standard -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+
+  <!-- meta og -->
+  <meta property="og:type" name="og:type" content="website"/>
+  <meta property="og:url" name="og:url" content="http://marketmovers.io/"/>
+  <meta property="og:title" name="og:title" content="marketmovers | [todo]"/>
+  <meta property="og:description" name="og:description" content="[todo]"/>
+
+  <title>marketmovers</title>
+
+  <!-- scripts (third-party) -->
+  <script src="/js/third-party/jquery/jquery-2.1.4.min.js"></script>
+  <script src="/js/third-party/angular/angular.min.js"></script>
+
+  <!-- scripts (marketmovers) -->
+  <script src="/js/angular_mm.js"></script>
+  <script src="/js/common/data_services.js"></script>
+  <script src="/js/common/data_const.js"></script>
+  <script src="/js/services/test-stock-service.js"></script>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/ico/favicon.png">
+
+</head>
+<body ng-controller="MainController">
+  <h1>{{helloWord}}</h1>
+  <ul>
+    <li ng-repeat="stock in stocks1">{{stock}}</li>
+  </ul>
+
+<br><br><br>
+
+  <ul>
+    <li ng-repeat="stock in stocks2">{{stock}}</li>
+  </ul>
+
+</body>
 </html>

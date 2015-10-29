@@ -1,6 +1,6 @@
 package io.marketmovers.repository;
 
-import io.marketmovers.documents.TestStock;
+import io.marketmovers.models.TestStock;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

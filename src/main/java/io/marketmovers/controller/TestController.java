@@ -1,10 +1,8 @@
 package io.marketmovers.controller;
 
-import io.marketmovers.documents.TestStock;
+import io.marketmovers.models.TestStock;
 import io.marketmovers.repository.TestStockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,8 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import io.marketmovers.http.AjaxResponseFactory;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by mikechabot on 10/28/15.

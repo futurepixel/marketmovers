@@ -1,4 +1,4 @@
-package io.marketmovers.documents;
+package io.marketmovers.models;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
